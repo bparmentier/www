@@ -277,7 +277,11 @@ RSS_PATH = "blog"
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [
+        ("archlinux.html", "blog/categories/archlinux.html"),
+        ("android.html", "blog/categories/android.html"),
+        ("web.html", "blog/categories/web.html"),
+        ("contact.html", "about.html")]
 
 # Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
