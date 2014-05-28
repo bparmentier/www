@@ -1,0 +1,33 @@
+# -*- encoding:utf-8 -*-
+from __future__ import unicode_literals
+
+MESSAGES = {
+    "%d min remaining to read": "",
+    "Also available in:": "Auch verfügbar in:",
+    "Archive": "Archiv",
+    "Categories": "Kategorien",
+    "Comments": "Kommentare",
+    "LANGUAGE": "Deutsch",
+    "Languages:": "Sprachen:",
+    "More posts about %s": "Weitere Einträge über %s",
+    "Newer posts": "Neuere Einträge",
+    "Next post": "Nächster Eintrag",
+    "No posts found.": "Keine Einträge gefunden.",
+    "Nothing found.": "Nichts gefunden.",
+    "Older posts": "Ältere Einträge",
+    "Original site": "Original-Seite",
+    "Posted:": "Veröffentlicht:",
+    "Posts about %s": "Einträge über %s",
+    "Posts for year %s": "Einträge aus dem Jahr %s",
+    "Posts for {month} {year}": "Einträge aus {month} {year}",
+    "Previous post": "Vorheriger Eintrag",
+    "Publication date": "Veröffentlichungsdatum",
+    "RSS feed": "RSS-Feed",
+    "Read in English": "Auf Deutsch lesen",
+    "Read more": "Weiterlesen",
+    "Source": "Source",
+    "Tags and Categories": "Tags und Kategorien",
+    "Tags": "Tags",
+    "old posts, page %d": "Vorherige Einträge, Seite %d",
+    "page %d": "Seite %d",
+}

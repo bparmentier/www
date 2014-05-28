@@ -1,0 +1,33 @@
+# -*- encoding:utf-8 -*-
+from __future__ import unicode_literals
+
+MESSAGES = {
+    "%d min remaining to read": "za prebrati preostalo še %d min",
+    "Also available in:": "Na voljo tudi v:",
+    "Archive": "Arhiv",
+    "Categories": "Kategorije",
+    "Comments": "Komentarji",
+    "LANGUAGE": "Slovenščina",
+    "Languages:": "Jeziki:",
+    "More posts about %s": "Več objav o %s",
+    "Newer posts": "Novejše objave",
+    "Next post": "Naslednja objava",
+    "No posts found.": "Ni najdenih objav.",
+    "Nothing found.": "Brez zadetkov.",
+    "Older posts": "Starejše objave",
+    "Original site": "Izvorna spletna stran",
+    "Posted:": "Objavljeno:",
+    "Posts about %s": "Objave o %s",
+    "Posts for year %s": "Objave za leto %s",
+    "Posts for {month} {year}": "Objave za {month} {year}",
+    "Previous post": "Prejšnja objava",
+    "Publication date": "Datum objave",
+    "RSS feed": "vir RSS",
+    "Read in English": "Beri v slovenščini",
+    "Read more": "Več o tem",
+    "Source": "Izvor",
+    "Tags and Categories": "Značke in kategorije",
+    "Tags": "Značke",
+    "old posts, page %d": "stare objave, stran %d",
+    "page %d": "stran %d",
+}

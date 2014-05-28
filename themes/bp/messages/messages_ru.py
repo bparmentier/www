@@ -1,0 +1,33 @@
+# -*- encoding:utf-8 -*-
+from __future__ import unicode_literals
+
+MESSAGES = {
+    "%d min remaining to read": "",
+    "Also available in:": "Также доступно на:",
+    "Archive": "Архив",
+    "Categories": "Категории",
+    "Comments": "",
+    "LANGUAGE": "Русский",
+    "Languages:": "",
+    "More posts about %s": "Больше записей о %s",
+    "Newer posts": "Новые записи",
+    "Next post": "Следующая запись",
+    "No posts found.": "",
+    "Nothing found.": "",
+    "Older posts": "Старые записи",
+    "Original site": "Оригинальный сайт",
+    "Posted:": "Опубликовано:",
+    "Posts about %s": "Записи о %s",
+    "Posts for year %s": "Записи за %s год",
+    "Posts for {month} {year}": "Записи за {month} {year}",
+    "Previous post": "Предыдущая запись",
+    "Publication date": "",
+    "RSS feed": "",
+    "Read in English": "Прочесть по-русски",
+    "Read more": "Читать далее",
+    "Source": "Источник",
+    "Tags and Categories": "Тэги и категории",
+    "Tags": "Тэги",
+    "old posts, page %d": "%d страница со старыми записями",
+    "page %d": "%d страница",
+}
