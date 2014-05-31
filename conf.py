@@ -189,7 +189,7 @@ PAGES = (
 COMPILERS = {
     "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
+   "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
     "wiki": ('.wiki',),
@@ -679,7 +679,22 @@ SHOW_SOURCELINK = False
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-# BODY_END = ""
+BODY_END = """
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.brunoparmentier.be/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://piwik.brunoparmentier.be/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
