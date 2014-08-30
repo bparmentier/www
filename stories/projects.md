@@ -30,12 +30,6 @@
 
 ## Contributing
 
-### For Android
-
-* [Safe In Cloud](http://www.safe-in-cloud.com/ "Safe In Cloud"): French translation
-
-### Various
-
 * [OpenStreetMap](https://openstreetmap.org/user/bparmentier "OpenStreetMap profile")
 
 ## Older projects
