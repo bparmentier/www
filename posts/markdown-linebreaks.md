@@ -18,9 +18,8 @@ Violets are blue
 
 It will render:
 
-```
-Roses are red Violets are blue
-```
+> Roses are red
+> Violets are blue
 
 If you write a newline between the two:
 
@@ -30,7 +29,11 @@ Roses are red
 Violets are blue
 ```
 
-It will render two paragraphs.
+It will render two paragraphs:
+
+> Roses are red  
+>
+> Violets are blue
 
 The thing is to put two blank spaces at the end of the first line:
 
@@ -41,7 +44,5 @@ Violets are blue
 
 It will then render:
 
-```
-Roses are red
-Violets are blue
-```
+> Roses are red  
+> Violets are blue
