@@ -22,7 +22,7 @@ Then execute:
 
 Modes are displayed in hexadecimal.
 
-Now edit `/boot/syslinux/syslinuc.cfg` and add to the `APPEND` line the desired
+Now edit `/boot/syslinux/syslinux.cfg` and add to the `APPEND` line the desired
 resolution with:
 
 ```
