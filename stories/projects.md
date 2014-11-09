@@ -10,7 +10,7 @@
 
 ## Personal
 
-* [OpenBikeSharing](https://github.com/bparmentier/OpenBikeSharing "OpenBikeSharing"): shared bikes info on Android
+* [OpenBikeSharing](http://openbikesharing.org "OpenBikeSharing"): shared bikes availability on Android
 * [vim-syntax-lda](https://github.com/bparmentier/vim-syntax-lda "vim-syntax-lda"): Vim syntax file for LDA (Langage de description d'algorithmes) as taught in ESI (École Supérieure d'Informatique)
 * [dotfiles](https://github.com/bparmentier/dotfiles "dotfiles"): my dotfiles (bash, i3, etc.)
 * [scripts](https://github.com/bparmentier/scripts "scripts"): random bash scripts
