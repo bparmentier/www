@@ -25,7 +25,7 @@
 
 ## Websites
 
-* [BIMCC](http://www.bimcc.org/v2 "BIMCC website"): new version of the BIMCC website
+* [Brussels Map Circle](http://www.bimcc.org/ "BIMCC website"): new version of the BIMCC website
 
 ## Contributing
 
