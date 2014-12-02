@@ -26,6 +26,7 @@
 ## Websites
 
 * [Brussels Map Circle](http://www.bimcc.org/ "BIMCC website"): new version of the BIMCC website
+* [OpenBikeSharing.org](http://openbikesharing.org/ "OpenBikeSharing.org"): app presentation webpage (based on Jekyll and Bootstrap)
 
 ## Contributing
 
