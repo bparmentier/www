@@ -18,6 +18,11 @@ and the articles on this site in Markdown.
 My main computer is running [Arch Linux](https://www.archlinux.org "Arch Linux")
 with [i3](http://i3wm.org/ "i3 window manager") as window manager.
 
+If you like what I do, please consider donating.
+
+[![Donate bitcoin](bitcoin_donate_logo.svg "Donate
+Bitcoin")](bitcoin:168utA5DWMVXLFVfQDahG5abEWUSk9Wcfm "Donate Bitcoin")
+
 ## Contact me
 
 You can contact me by email at <bp@brunoparmentier.be> or on
@@ -25,8 +30,3 @@ You can contact me by email at <bp@brunoparmentier.be> or on
 
 My PGP public key can be found here:
 [E556 BFCA](http://gpg.nebrwesleyan.edu:11371/pks/lookup?op=get&search=0x53F632B6E556BFCA "PGP public key").
-
-If you like what I do, please consider donating.
-
-[![Donate bitcoin](bitcoin_donate_logo.svg "Donate
-Bitcoin")](bitcoin:168utA5DWMVXLFVfQDahG5abEWUSk9Wcfm "Donate Bitcoin")
