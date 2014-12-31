@@ -361,24 +361,6 @@ img {
 	padding-right: 10px;
 }
 
-/* Various */
-#bitcoin-donate-button {
-    background-color: #989898;
-    color: #DDD;
-    border-radius: 5px;
-    padding: 0.5em;
-}
-
-#bitcoin-donate-button:hover {
-    color: #EEE;
-    background-color: #909090;
-}
-
-#bitcoin-donate-button img {
-    margin-right: 0.5em;
-    height: 1em;
-}
-
 /* Media queries */
 
 @media screen and (max-width: 800px) {
