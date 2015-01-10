@@ -10,12 +10,12 @@
 
 Only files:
 
-```bash
+```console
 $ find . -type f -exec chmod 644 {} \;
 ```
 
 Only directories:
 
-```bash
+```console
 $ find . -type d -exec chmod 755 {} \;
 ```

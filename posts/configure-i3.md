@@ -10,6 +10,6 @@
 
 Install dmenu to use `$mod` + `D` (dmenu):
 
-```bash
+```console
 # pacman -S dmenu
 ```

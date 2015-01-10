@@ -23,7 +23,7 @@ I consider that you just booted on your Arch Linux install medium (note that the
 take some time).
 
 # Keyboard layout
-```
+```console
 # loadkeys be-latin1
 ```
 
@@ -31,31 +31,31 @@ take some time).
 We will fill up the SSD with random data.
 
 Create a temporary encrypted container on `/dev/sda`:
-```
+```console
 # cryptsetup open --type plain /dev/sda container
 ```
 
 Check it exists:
-```bash
+```console
 # fdisk -l
 Disk /dev/mapper/container: 232.9 GiB, 250059350016 bytes, 488397168 sectors
 ```
 
 Wipe it with pseudorandom encrypted data (use of `/dev/urandom` is not required
 as the encryption cipher is used for randomness):
-```
+```console
 # dd if=/dev/zero of=/dev/mapper/container
 ```
 (Took me 1 hour on my 250 GB Samsung 840 EVO)
 
 Close the container:
-```
+```console
 # cryptsetup luksClose container
 ```
 
 # Partitioning
 Create two GPT partitions:
-```
+```console
 # gdisk /dev/sda
 ```
 
@@ -63,28 +63,28 @@ Create two GPT partitions:
 * `/dev/sda2`: the remaining space for the system
 
 Prepare boot partition:
-```
+```console
 # mkfs.ext2 /dev/sda1
 ```
 
 Prepare encrypted partition:
-```
+```console
 # cryptsetup --cipher aes-xts-plain64 --hash sha512 --use-random --verify-passphrase luksFormat /dev/sda2
 ```
 
 Open encrypted partition:
-```
+```console
 # cryptsetup luksOpen /dev/sda2 root
 ```
 
 Format encrypted partition in Btrfs:
-```
+```console
 # mkfs.btrfs /dev/mapper/root
 # mount -o noatime,discard,ssd,defaults /dev/mapper/root /mnt
 ```
 
 Create Btrfs subvolumes:
-```
+```console
 # cd /mnt
 # btrfs subvolume create __active
 # btrfs subvolume create __active/rootvol
@@ -95,7 +95,7 @@ Create Btrfs subvolumes:
 
 # System configuration
 Mount subvolumes in `/mnt`:
-```
+```console
 # cd
 # umount /mnt
 # mount -o subvol=__active/rootvol /dev/mapper/root /mnt
@@ -105,23 +105,23 @@ Mount subvolumes in `/mnt`:
 ```
 
 Mount boot partition:
-```
+```console
 # mkdir /mnt/boot
 # mount /dev/sda1 /mnt/boot
 ```
 
 Install system
-```
+```console
 # pacstrap /mnt base base-devel btrfs-progs
 ```
 
 Generate fstab
-```
+```console
 # genfstab -p /mnt >> /mnt/etc/fstab
 ```
 
 Edit /mnt/etc/fstab and add the following options:
-```
+```console
 /dev/mapper/root    /       btrfs   noatime,discard,ssd,autodefrag,compress=lzo,space_cache,subvol=__active/rootvol ...
 /dev/mapper/root    /home   btrfs   noatime,discard,ssd,autodefrag,compress=lzo,space_cache,subvol=__active/home    ...
 /dev/mapper/root    /var    btrfs   noatime,discard,ssd,autodefrag,compress=lzo,space_cache,subvol=__active/var     ...
@@ -129,7 +129,7 @@ Edit /mnt/etc/fstab and add the following options:
 ```
 
 Chroot into the new system
-```
+```console
 # arch-chroot /mnt
 ```
 
@@ -137,22 +137,22 @@ Configure hostname, timezone, locale, keymap, etc.
 
 Add the `encrypt` hook in /etc/mkinitcpio.conf (before `filesystems`) so that it
 looks something like this:
-```
+```console
 HOOKS="base udev autodetect modconf block encrypt filesystems keyboard fsck"
 ```
 
 Rebuild the boot images:
-```
+```console
 # mkinitcpio -p linux
 ```
 
 Set root password:
-```
+```console
 # passwd
 ```
 
 Configure SYSLINUX:
-```
+```console
 # pacman -S syslinux gptfdisk
 # syslinux-install_update -iam
 ```
@@ -168,12 +168,12 @@ LABEL arch
 Exit chroot.
 
 Unmount everything:
-```
+```console
 # umount /mnt/{home,var,boot}
 # umount /mnt
 ```
 
 Reboot:
-```
+```console
 # reboot
 ```

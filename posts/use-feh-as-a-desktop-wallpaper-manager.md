@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-```bash
+```console
 $ feh --bg-max image.png
 ```
 

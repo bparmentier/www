@@ -12,13 +12,13 @@
 
 Install tightvnc:
 
-```bash
-$ sudo apt-get install tightvncserver
+```console
+# apt-get install tightvncserver
 ```
 
 Launch tightvnc with:
 
-```bash
+```console
 $ tightvncserver
 ```
 
@@ -37,12 +37,12 @@ Note the raspberrypi:1.
 
 Install tightvnc:
 
-```bash
+```console
 # pacman -S tightvnc
 ```
 
 Connect to your Raspberry Pi with (adapt your ip address):
 
-```bash
+```console
 $ vncviewer 192.168.1.4:1
 ```

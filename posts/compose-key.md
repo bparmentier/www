@@ -13,13 +13,13 @@ subsequent keys. For example, pressing `Compose` then `/` + `=` will print a `â‰
 (not equal to) sign.
 
 Choose a key in the list:
-```
+```console
 grep "compose:" /usr/share/X11/xkb/rules/base.lst
 ```
 
 Then add the following line in your `.xinitrc` (change `<key>` to the key you
 want):
-```
+```console
 setxkbmap -option compose:<key>
 ```
 
@@ -38,6 +38,6 @@ Some useful combinations not directly accessible on my keyboard:
 ```
 
 To configure the combinations:
-```
+```console
 cp /usr/share/X11/locale/en_US.UTF-8/Compose ~/.XCompose
 ```

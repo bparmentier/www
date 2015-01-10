@@ -10,28 +10,28 @@
 
 Install pyusb10 from AUR:
 
-```bash
+```console
 $ yaourt -S pyusb10
 ```
 
 Install pip2:
 
-```bash
-$ sudo pacman -S python2-pip
+```console
+# pacman -S python2-pip
 ```
 
 Download python-ant-downloader from GitHub and install it:
 
-```bash
+```console
 $ git clone https://github.com/braiden/python-ant-downloader.git
 ```
 
-```bash
+```console
 $ cd python-ant-downloader
 ```
 
-```bash
-$ sudo pip2 install .
+```console
+# pip2 install .
 ```
 
 To access the USB device as a normal user, add the following line to
@@ -42,7 +42,7 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0fcf", ATTR{idProduct}=="1008", MODE="666"
 ```
 
 Launch ant-downloader.
-```bash
+```console
 $ ant-downloader
 ```
 

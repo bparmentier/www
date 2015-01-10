@@ -13,18 +13,18 @@ So, I have a laptop with a 1920\*1080 screen and I want to connect it with a
 
 First make sure xorg-xrandr is installed:
 
-```bash
-$ sudo pacman -S xorg-xrandr
+```console
+# pacman -S xorg-xrandr
 ```
 
 Connect the monitor and run:
 
-```bash
+```console
 $ xrandr -q
 ```
 
 Note the names of the two outputs, then run:
 
-```bash
+```console
 $ xrandr --output LVDS1 --pos 0x0 --mode 1920x1080 --output VGA1 --mode 1680x1050 --left-of LVDS1
 ```

@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-```bash
+```console
 $ openssl req -nodes -x509 -newkey rsa:4096 -sha512 -days 365 -keyout cert.key -out cert.pem
 ```
 

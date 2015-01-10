@@ -12,6 +12,6 @@ Launch the command with & at the end (background).
 
 Example:
 
-```bash
+```console
 $ firefox &
 ```

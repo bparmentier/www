@@ -12,6 +12,6 @@ Add a \ (backslash) before the command to disable the alias.
 
 Example:
 
-```bash
+```console
 $ \ls
 ```

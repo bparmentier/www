@@ -13,12 +13,12 @@ azerty, I prefer not to make this new layout definitive.
 
 To switch to bépo in X11, type the following command:
 
-```bash
+```console
 $ setxkbmap fr bepo
 ```
 
 To switch back to azerty (Belgian):
 
-```bash
+```console
 $ setxkbmap be
 ```

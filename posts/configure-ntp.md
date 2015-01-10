@@ -10,7 +10,7 @@
 
 Install ntp:
 
-```bash
+```console
 # pacman -S ntp
 ```
 
@@ -25,6 +25,6 @@ server 3.be.pool.ntp.org iburst
 
 Enable ntpd at startup:
 
-```bash
-$ systemctl enable ntpd
+```console
+# systemctl enable ntpd
 ```

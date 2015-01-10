@@ -12,7 +12,7 @@
 
 For advanced completion, install the bash-completion package:
 
-```bash
+```console
 # pacman -S bash-completion
 ```
 
@@ -20,13 +20,13 @@ For advanced completion, install the bash-completion package:
 
 Install pkgfile:
 
-```bash
+```console
 # pacman -S pkgfile
 ```
 
 Then update the database with:
 
-```bash
+```console
 # pkgfile --update
 ```
 
@@ -37,16 +37,16 @@ Note: didn't work for me.
 *EDIT: the following trick is not needed anymore since pacman (>= 4.1) now
 supports color output.*
 
-Install pacman-color from AUR.
+Install `pacman-color` from AUR.
 
 Backup the original pacman executable:
 
-```bash
+```console
 # mv /usr/bin/pacman /usr/bin/pacman.bak
 ```
 
 Make a symlink from pacman to pacman-color:
 
-```bash
+```console
 # ln -s /usr/bin/pacman-color /usr/bin/pacman
 ```

@@ -10,13 +10,13 @@
 
 To know which resolutions are supported by your screen, install hwinfo:
 
-```bash
+```console
 # pacman -S hwinfo
 ```
 
 Then execute:
 
-```bash
+```console
 # hwinfo --vbe | grep 'Mode '
 ```
 

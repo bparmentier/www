@@ -20,12 +20,12 @@ IP=dhcp
 
 Start the profile with:
 
-```bash
+```console
 # netctl start usb-tether
 ```
 
 Or enable it with:
 
-```bash
+```console
 # netctl enable usb-tether
 ```

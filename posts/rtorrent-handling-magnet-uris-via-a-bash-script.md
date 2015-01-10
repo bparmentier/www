@@ -31,12 +31,12 @@ echo "d10:magnet-uri${#1}:${1}e" > "meta-$filename.torrent"
 
 Make the script executable:
 
-```bash
+```console
 $ chmod a+x magnet2torrent
 ```
 
 Run the script with a magnet URI (after adding it to your `$PATH` variable):
 
-```bash
+```console
 $ magnet2torrent "MAGNET_URI"
 ```

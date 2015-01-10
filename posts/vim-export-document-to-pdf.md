@@ -23,6 +23,6 @@ Now print your document to PostScript:
 
 Exit Vim and use ps2pdf to convert mydocument.ps to mydocument.pdf.
 
-```bash
+```console
 $ ps2pdf mydocument.ps
 ```

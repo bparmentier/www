@@ -18,7 +18,7 @@ well explained:
 
 Add yourself to the network group:
 
-```
+```console
 # usermod -a -G network <user>
 ```
 
@@ -39,10 +39,10 @@ special characters, it may help.
 
 Now you should be able to mount and unmount `~/Owncloud` with:
 
-```bash
+```console
 $ mount ~/Owncloud
 ```
 
-```bash
+```console
 $ fusermount -u ~/Owncloud
 ```

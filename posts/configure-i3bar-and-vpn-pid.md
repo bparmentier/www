@@ -12,7 +12,7 @@ In this case, I use the privatvpn script, which install the OpenVPN client.
 
 Replace the command line in `/usr/bin/privatvpn` with:
 
-```bash
+```
 /usr/sbin/openvpn --config /etc/openvpn/privatvpn.conf --writepid /var/run/openvpn.pid
 ```
 

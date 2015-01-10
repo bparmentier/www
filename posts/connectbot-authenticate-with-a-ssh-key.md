@@ -34,7 +34,7 @@ Your key is now created.
 Long press on its name and choose `Copy public key`.
 Log in to the server (with your password) and type the following command:
 
-```bash
+```console
 $ echo "your public key" >> .ssh/authorized_keys
 ```
 

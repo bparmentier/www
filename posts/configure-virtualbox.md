@@ -10,18 +10,18 @@
 
 Install it with:
 
-```bash
+```console
 # pacman -S virtualbox qt
 ```
 
 Add user `bp` to the `vboxusers` group:
 
-```bash
+```console
 # gpasswd -a bp vboxusers
 ```
 
 Load kernel module at boot:
 
-```bash
+```console
 # tee /etc/modules-load.d/virtualbox.conf <<< "vboxdrv"
 ```

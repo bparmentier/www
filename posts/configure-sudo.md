@@ -10,7 +10,7 @@
 
 Install with:
 
-```bash
+```console
 # pacman -S sudo
 ```
 

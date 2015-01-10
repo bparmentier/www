@@ -10,21 +10,21 @@
 
 First install the arduino package from AUR:
 
-```bash
-$ sudo yaourt -S arduino
+```console
+$ yaourt -S arduino
 ```
 
 Add yourself to the `uucp` group:
 
-```bash
-$ sudo gpasswd -a <user> uucp
+```console
+# gpasswd -a <user> uucp
 ```
 
 Logout and login again.
 
 Connect your arduino to your computer and lauch:
 
-```bash
+```console
 $ ls /dev/ttyUSB* /dev/ttyACM*
 ```
 
@@ -47,14 +47,14 @@ Port menu?`), this may be because you don't have write permissions on
 
 The following trick should resolve the problem:
 
-```bash
-$ sudo chmod 777 /run/lock
+```console
+# chmod 777 /run/lock
 ```
 
-```bash
-$ sudo cp /usr/lib/tmpfiles.d/legacy.conf /etc/tmpfiles.d/
+```console
+# cp /usr/lib/tmpfiles.d/legacy.conf /etc/tmpfiles.d/
 ```
 
-```bash
-$ sudo chmod 777 /etc/tmpfiles.d/legacy.conf
+```console
+# chmod 777 /etc/tmpfiles.d/legacy.conf
 ```
