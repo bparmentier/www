@@ -6,9 +6,9 @@
     <ul class="post-list">
         % for post in posts:
             <li class="post-list-item">
-	        ${post.formatted_date(date_format)}
+	        ${post.formatted_date(date_format)|h}
 		&nbsp;
-		<a href="${post.permalink(lang)}">${post.title(lang)}</a>
+		<a href="${post.permalink(lang)}">${post.title(lang)|h}</a>
 	    </li>
         % endfor
     </ul>

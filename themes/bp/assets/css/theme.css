@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /*
-	Copyright © 2014 Daniel Aleksandersen and others.
+	Copyright © 2014-2015 Daniel Aleksandersen and others.
+    Copyright © 2015 Bruno Parmentier
 
 	Permission is hereby granted, free of charge, to any
 	person obtaining a copy of this software and associated
@@ -102,7 +103,6 @@ body {
 #menu ul li,
 #toptranslations ul li {
 	display: inline-block;
-    height: 40px;
 	margin-right: 5px;
 }
 
@@ -211,16 +211,13 @@ code, pre.code {
 
 /* Tags */
 .postpromonav {
+	border-bottom: 1px solid #4F5151;
+	border-top: 1px solid #4F5151;
 	margin-top: 1em;
 	padding: .5em 0;
 }
 .postpromonav .tags {
 	text-align: center;
-}
-
-.postpromonav .tags,
-.pager {
-    margin: 0.5em;
 }
 .metadata p:before,
 .postpromonav .tags li:before,
@@ -256,6 +253,7 @@ code, pre.code {
 	content: "";
 }
 .postpromonav .pager {
+	clear: both;
 	height: 1em;
 }
 .postpromonav .tags li,
@@ -268,6 +266,14 @@ code, pre.code {
 .postpromonav .pager .next:dir(rtl) {
 	float: left;
 }
+
+.postpromonav .pager .previous {
+	float: left;
+}
+.postpromonav .pager .previous:dir(rtl) {
+	float: right;
+}
+
 .metadata p {
 	display: inline;
 }
@@ -360,6 +366,135 @@ img {
 .codetable .linenos {
 	padding-right: 10px;
 }
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+}
+
+pre.code, code {
+	white-space: pre;
+	word-wrap: normal;
+	overflow: auto;
+}
+
+/* SOURCE: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+		font-family: Garamond, Junicode, serif;
+	}
+
+	body {
+		font-size: 12pt;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after,
+	a[href^="data:"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+
+	.hidden-print {
+		display: none !important;
+	}
+
+	article .entry-title a[href]:after,
+	article .metadata a[href]:after,
+	article .tags a[href]:after {
+		content: "";
+	}
+
+	article .metadata .sourceline {
+		display: none;
+	}
+
+	article .metadata .linkline a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	#header {
+		display: none;
+	}
+
+	.postpromonav {
+		padding: 0;
+	}
 
 /* Media queries */
 

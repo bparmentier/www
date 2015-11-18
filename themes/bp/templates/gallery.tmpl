@@ -7,7 +7,7 @@
 <%block name="content">
     ${ui.bar(crumbs)}
     %if title:
-    <h1>${title}</h1>
+    <h1>${title|h}</h1>
     %endif
     %if post:
     <p>
@@ -17,8 +17,8 @@
     %if folders:
     <ul>
     % for folder, ftitle in folders:
-        <li><a href="${folder}"><i
-        class="icon-folder-open"></i>&nbsp;${ftitle}</a></li>
+        <li><a href="${folder|u}"><i
+        class="icon-folder-open"></i>&nbsp;${ftitle|h}</a></li>
     % endfor
     </ul>
     %endif
@@ -26,11 +26,16 @@
     <ul class="thumbnails">
         %for image in photo_array:
             <li><a href="${image['url']}" class="thumbnail image-reference" title="${image['title']}">
-                <img src="${image['url_thumb']}" alt="${image['title']}" /></a>
+                <img src="${image['url_thumb']}" alt="${image['title']|h}" /></a>
         %endfor
     </ul>
     %endif
 %if site_has_comments and enable_comments:
     ${comments.comment_form(None, permalink, title)}
 %endif
+</%block>
+
+<%block name="extra_head">
+${parent.extra_head()}
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 </%block>
