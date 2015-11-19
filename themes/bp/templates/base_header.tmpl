@@ -28,6 +28,8 @@
 </%def>
 
 <%def name="html_navigation_links()">
+    <input id="mobile-toggle" type="checkbox" />
+    <label class="mobile-toggle" for="mobile-toggle"></label>
     <nav id="menu">
     <ul>
     %for url, text in navigation_links[lang]:
