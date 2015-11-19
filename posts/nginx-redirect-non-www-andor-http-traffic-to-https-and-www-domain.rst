@@ -2,9 +2,9 @@
 .. slug: nginx-redirect-non-www-andor-http-traffic-to-https-and-www-domain
 .. date: 2015-11-19 14:10:19+01:00
 .. tags: nginx
-.. category: 
-.. link: 
-.. description: 
+.. category:
+.. link:
+.. description:
 .. type: text
 
 As you may have seen, I have now forced the use of HTTPS on my website. The
@@ -20,15 +20,15 @@ domain, and all HTTP traffic to HTTPS.
 
 Basically, like this:
 
-+-----------------------------------+------------------------------------+
-| From                              | To                                 |
-+===================================+====================================+
-| ``http://brunoparmentier.be``     |                                    |
-+-----------------------------------+                                    +
-| ``http://www.brunoparmentier.be`` | ``https://www.brunoparmentier.be`` |
-+-----------------------------------+                                    +
-| ``https://brunoparmentier.be``    |                                    |
-+-----------------------------------+------------------------------------+
++---------------------------------------+----------------------------------------+
+| From                                  | To                                     |
++=======================================+========================================+
+| :code:`http://brunoparmentier.be`     |                                        |
++---------------------------------------+                                        +
+| :code:`http://www.brunoparmentier.be` | :code:`https://www.brunoparmentier.be` |
++---------------------------------------+                                        +
+| :code:`https://brunoparmentier.be`    |                                        |
++---------------------------------------+----------------------------------------+
 
 Here is the configuration I use on my server:
 
@@ -72,9 +72,9 @@ Here is the configuration I use on my server:
     }
 
 Note that I'm using a SAN (Subject Alternative Name) certificate which is valid
-for both ``brunoparmentier.be`` and ``www.brunoparmentier.be``.
+for both :code:`brunoparmentier.be` and :code:`www.brunoparmentier.be`.
 
-``chained.pem`` contains this certificate, along with the "Let’s Encrypt
+:code:`chained.pem` contains this certificate, along with the "Let’s Encrypt
 Intermediate X1" certificate.
 
-``domain.key`` contains the certificate private key.
+:code:`domain.key` contains the certificate private key.
