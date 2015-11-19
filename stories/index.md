@@ -1,23 +1,23 @@
-<!-- 
+<!--
 .. title: Home
 .. slug: index
 .. date: 05/22/2014 12:46:53 AM UTC+02:00
-.. tags: 
-.. link: 
-.. description: 
+.. tags:
+.. link:
+.. description:
 .. type: text
 -->
 
-Hello! You just landed on my personal website. You will mostly find tips about
-free software like Arch Linux and Android, which I use and learn everyday.
+Hello! You just landed on my personal website. You will find a
+[blog](/blog/index.html) and a list of [projects](/projects.html) I made. I
+don't write a lot, but when I do, it is generally about free software,
+Android/web development or (Arch) Linux configuration.
 
-The site is powered by [Nikola](http://getnikola.com/ "Nikola website"), a
+The site is powered by [Nikola](https://getnikola.com/ "Nikola website"), a
 static website and blog generator written in Python. You can browse my articles
-by [tag](blog/categories/ "Tags") and even subscribe to an RSS feed for a
-particular category.
+by [tag](blog/categories/ "Tags") and subscribe to the
+[RSS feed](/blog/rss.xml "RSS feed"). The sources are stored on
+[GitHub](https://github.com/bparmentier/www).
 
-Note that the `brunoparmentier.be` domain and all its sub-domains are accessible through
-HTTPS with a self-signed certificate.
-
-And don't forget to take a look at [my wiki](http://wiki.brunoparmentier.be
-"twobp wiki") if you are interested.
+I also have a [wiki](https://wiki.brunoparmentier.be) where I put notes about
+hardware I own and software I use.
