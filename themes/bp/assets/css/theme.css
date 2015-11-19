@@ -166,7 +166,6 @@ body {
 .dateline {
     font-variant: small-caps;
     color: inherit;
-    font-weight: bold;
 }
 
 .posttranslations h3:last-child {
