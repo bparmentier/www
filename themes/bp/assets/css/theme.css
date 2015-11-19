@@ -495,9 +495,9 @@ pre.code, code {
 	.postpromonav {
 		padding: 0;
 	}
+}
 
 /* Media queries */
-
 @media screen and (max-width: 800px) {
     body {
         width: 100%;
