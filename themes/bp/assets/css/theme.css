@@ -194,6 +194,16 @@ code, pre.code {
     border: 1px solid lightgrey;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+    vertical-align: middle;
+    border: 1px solid grey;
+}
+
 #header {
     background-color: #383838;
     padding-top: 1px;
