@@ -1,5 +1,4 @@
-brunoparmentier.be
-==================
+# www.brunoparmentier.be
 
 Personal website, powered by [Nikola](https://getnikola.com/).
 
