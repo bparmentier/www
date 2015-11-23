@@ -193,6 +193,10 @@ code, pre.code {
     border: 1px solid lightgrey;
 }
 
+.largetable {
+    overflow-x: auto;
+}
+
 table {
     border-collapse: collapse;
 }
