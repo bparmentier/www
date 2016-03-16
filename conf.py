@@ -134,7 +134,7 @@ NAVIGATION_LINKS = {
         ("/blog/categories/index.html", "Tags"),
         #("/blog/rss.xml", "RSS"),
         ("/projects.html", "Projects"),
-        ("http://wiki.brunoparmentier.be", "Wiki"),
+        ("https://wiki.brunoparmentier.be", "Wiki"),
         ("/links.html", "Links"),
         ("/about.html", "About"),
     ),
@@ -775,7 +775,7 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = '<a rel="license" title="CC-BY license" href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>'
+LICENSE = '<a rel="license" title="CC-BY license" href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>'
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
 # LICENSE = """
@@ -789,7 +789,7 @@ LICENSE = '<a rel="license" title="CC-BY license" href="http://creativecommons.o
 #CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 CONTENT_FOOTER = """
 Copyright &copy; 2013&ndash;{date} <a href="mailto:{email}">{author}</a> &mdash; {license}<br />
-Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a>
+Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
 """
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
