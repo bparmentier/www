@@ -10,11 +10,10 @@
 
 I am a student at École supérieure d'informatique in Brussels, Belgium.
 
-I have basic knowledge in C, C++, Java, HTML, CSS, PHP, x86 Assembly, SQL and I
-can manage with some scripting languages like bash. I write my reports in LaTeX
-and the articles on this site in Markdown or reStructuredText.
+I know Java, C, C++, Python, HTML, CSS, PHP, x86 Assembly and SQL.
+I write my reports in LaTeX and the articles on this site in Markdown or reStructuredText.
 
-I believe open knowledge leads to a better world, that's why I support open data
+I believe that open knowledge leads to a better world, that's why I support open data
 and free software ("as in free speech", more than "as in free beer").
 
 If you learned something new thanks to me, then I achieved my goal, and ask you
@@ -44,5 +43,5 @@ loosing my time on the site.
 
 You can contact me by email at <bp@brunoparmentier.be>.
 
-My PGP public key can be found here:
-[E556 BFCA](http://gpg.nebrwesleyan.edu:11371/pks/lookup?op=get&search=0x53F632B6E556BFCA "PGP public key").
+My PGP public key fingerprint is `5A3F FFA9 8902 7CEC 9567 9D07 53F6 32B6 E556 BFCA`.
+You can find it here: http://keys.gnupg.net/pks/lookup?op=get&search=0x53F632B6E556BFCA
