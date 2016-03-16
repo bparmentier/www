@@ -10,6 +10,7 @@
 
 ## Personal
 
+* [WiFiKeyShare](http://wifikeysha.re "WiFiKeyShare"): share Wi-Fi password with QR codes and NFC tags (Android)
 * [OpenBikeSharing](http://openbikesharing.org "OpenBikeSharing"): shared bikes availability (Android)
 * [APKShare](https://github.com/bparmentier/APKShare): extract and share installed apps' APK (Android)
 * [DNSSetter](https://github.com/bparmentier/DNSSetter "DNSSetter"): set custom DNS servers (Android)
