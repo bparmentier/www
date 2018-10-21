@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-I am a student at École supérieure d'informatique in Brussels, Belgium.
+I'm currently working at [Famoco](https://www.famoco.com) as a software developer in Brussels, Belgium.
 
 I know Java, C, C++, Python, HTML, CSS, PHP, x86 Assembly and SQL.
 I write my reports in LaTeX and the articles on this site in Markdown or reStructuredText.
@@ -34,12 +34,9 @@ is [Arch Linux](https://www.archlinux.org "Arch Linux") running with
 I am present on [Twitter](https://twitter.com/mau5kito "@mau5kito"),
 [Google+](https://plus.google.com/u/0/100140189944540510085),
 [GitHub](https://github.com/bparmentier "bparmentier"),
-[GitLab](https://gitlab.com/u/bparmentier "bparmentier") and
-[Stack Overflow](https://stackoverflow.com/users/3997816/bruno-parmentier "User Bruno Parmentier").
-
-You won't find me on Facebook (anymore), because I care about my privacy and I
-was tired of constantly having to keep an eye on changing privacy settings and
-loosing my time on the site.
+[GitLab](https://gitlab.com/u/bparmentier "bparmentier"),
+[Stack Overflow](https://stackoverflow.com/users/3997816/bruno-parmentier "User Bruno Parmentier") and
+[LinkedIn](https://www.linkedin.com/in/bruno-parmentier "Bruno Parmentier").
 
 You can contact me by email at <bp@brunoparmentier.be>.
 
